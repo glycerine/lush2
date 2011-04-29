@@ -1,0 +1,25 @@
+README: lush2 sources on github.
+
+Here are the sources for the lastest lush2, imported from Sourceforge, from
+
+http://sourceforge.net/scm/?type=svn&group_id=34223
+
+by doing:
+ svn co  https://lush.svn.sourceforge.net/svnroot/lush/lush2 lush2
+
+# at the time of import, these sources reflected the following svn repository,
+# which we believe is the lush2 trunk lastest as of 20 March 2011.
+#
+# from svn info:
+
+Path: .
+URL: https://lush.svn.sourceforge.net/svnroot/lush/lush2
+Repository Root: https://lush.svn.sourceforge.net/svnroot/lush
+Repository UUID: b68d3702-14d2-4b18-b47c-39ed2627325e
+Revision: 908
+Node Kind: directory
+Schedule: normal
+Last Changed Author: rjuengling
+Last Changed Rev: 908
+Last Changed Date: 2011-03-20 16:29:13 -0500 (Sun, 20 Mar 2011)
+
