@@ -1,5 +1,15 @@
 README: lush2 sources on github.
 
+*** Notes on 6 April 2012:
+
+To reinstate support for OSX snow leopard and above, I added patches based on apples dyldinfo.cpp source code. The resulting patches are available under the Apple open source license version 2, viewable in the APSL2 file.
+
+To work on my Snow leopard install, I do:
+
+LIBS=-lfontconfig ./configure; make
+
+*** Notes on 28 April 2011
+
 Here are the sources for the lastest lush2, imported from Sourceforge, from
 
 http://sourceforge.net/scm/?type=svn&group_id=34223

@@ -79,7 +79,7 @@ OBJS1=at.o binary.o cref.o calls.o arith.o check_func.o \
       idx1.o idx2.o idx3.o idx4.o index.o io.o list.o \
       main.o math.o misc.o cmm.o module.o number.o oostruct.o \
       regex.o storage.o string.o symbol.o toplevel.o user.o weakref.o \
-      ps_driver.o rng.o lisp_driver.o
+      ps_driver.o rng.o lisp_driver.o dyldinfo.o
 
 @UNIX_YES@OBJS3=unix.o
 @UNIX_YES@@X_YES@OBJS2=x11_driver.o
@@ -253,11 +253,14 @@ misc.o: misc.c ../include/header.h ../include/define.h \
   ../include/cmm_private.h ../include/dh.h ../include/idxmac.h \
   ../include/idxops.h ../include/check_func.h
 cmm.o: cmm.c ../include/lushconf.h ../include/cmm.h
-module.o: module.c ../include/header.h ../include/define.h \
+module.o: module.cpp ../include/header.h ../include/define.h \
   ../include/lushconf.h ../include/fltlib.h ../include/cmm.h \
   ../include/cmm_private.h ../include/dh.h ../include/idxmac.h \
   ../include/idxops.h ../include/check_func.h ../include/dh.h \
-  ../include/dldbfd.h
+  ../include/dldbfd.h ../include/dyldinfo.hpp
+dyldinfo.o: dyldinfo.cpp ../include/dyldinfo.hpp  ../include/Architectures.hpp \
+  ../include/MachOFileAbstraction.hpp ../include/FileAbstraction.hpp \
+  ../include/MachOTrie.hpp
 number.o: number.c ../include/header.h ../include/define.h \
   ../include/lushconf.h ../include/fltlib.h ../include/cmm.h \
   ../include/cmm_private.h ../include/dh.h ../include/idxmac.h \
