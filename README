@@ -2,7 +2,7 @@ README: lush2 sources on github.
 
 *** Notes on 6 April 2012:
 
-To reinstate support for OSX snow leopard and above, I added patches based on apples dyldinfo.cpp source code. The resulting patches are available under the Apple open source license version 2, viewable in the APSL2 file.
+To reinstate support for OSX snow leopard and above, I added patches based on apples dyldinfo.cpp source code. The resulting patches are available under the Apple public source license, version 2, viewable in the lush2/APSL2 file and here:
 
 http://www.opensource.apple.com/license/apsl/
 
